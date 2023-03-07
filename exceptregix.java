@@ -8,7 +8,7 @@ import org.junit.Test;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class exceptregix {
+ public class exceptregix {
     @Test
     public void exptreg1() throws EnterProperAlphabet {
         except exceptObj = new except();
@@ -44,7 +44,7 @@ public class exceptregix {
 }
 
 class except {
-    public boolean exptregFirst(String FirstName) throws EnterProperAlphabet {
+     public boolean exptregFirst(String FirstName) throws EnterProperAlphabet {
         try {
             Pattern pattern = Pattern.compile("[A-Z]{1}[a-z]+");
             Matcher m = pattern.matcher(FirstName);
